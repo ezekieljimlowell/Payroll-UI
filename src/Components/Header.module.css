@@ -134,6 +134,10 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.searchInput::placeholder {
+    color: #fff;
+}
+
 input, input:focus, button, button:focus {
     outline: none;
 }
@@ -168,11 +172,11 @@ input, input:focus, button, button:focus {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .languageContainer {
-    position: relative; 
+    position: relative;
 }
 
 .rightSideElements>li>a {
@@ -183,6 +187,15 @@ input, input:focus, button, button:focus {
     height: 60px;
 }
 
+.navLink {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    white-space: nowrap;
+}
+
 .responsiveSearchIcon>li>a:focus, .responsiveSearchIcon>li>a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -191,6 +204,9 @@ input, input:focus, button, button:focus {
     border: none;
     background-color: #fc6075;
     height: 58px;
+    color: white;
+    padding: 2px;
+    cursor: pointer;
 }
 
 .languageContainer select:hover {
@@ -202,6 +218,45 @@ input, input:focus, button, button:focus {
 .languageContainer select:focus {
     border: none;
     outline: none;
+}
+
+.languageContainer option {
+    background-color: #fafafa;
+    padding: 5px;
+    color: black;
+}
+
+.notificationContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.notificationContainer .bellIcon {
+    vertical-align: middle;
+}
+
+.notificationContainer:hover {
+    background-color:  rgba(0, 0, 0, 0.2);
+}
+
+.chatContainer {
+    cursor: pointer;
+}
+
+.chatContainer:hover {
+    background-color:  rgba(0, 0, 0, 0.2);
+}
+
+.profileContainer .profilePhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.profileContainer:hover {
+    background-color:  rgba(0, 0, 0, 0.2);
 }
 
 /* .languageContainer select:active {

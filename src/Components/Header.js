@@ -1,8 +1,13 @@
 import React from "react";
 import Styles from './Header.module.css';
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/material/Icon";
+import { US } from 'country-flag-icons/string/3x2';
+import Flags from 'country-flag-icons/react/3x2';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import { MenuItem, Select } from "@mui/material";
 
 export const Header = () => {
+
     return (
         <div>
             <div className={Styles.navBackground}>
@@ -36,18 +41,37 @@ export const Header = () => {
                         </div>
                     </li>
                     <li className={Styles.languageContainer}>
-                        <a>
+                        <a className={Styles.navLink}>
                             <select>
-                                <option>English</option>
+                                <option>
+                                    English
+                                </option>
                                 <option>French</option>
                                 <option>German</option>
                                 <option>Spain</option>
                             </select>
                         </a>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li className={Styles.notificationContainer}>
+                        <a className={Styles.navLink}>
+                            <NotificationsNoneOutlinedIcon className={Styles.bellIcon} />
+                        </a>
+                    </li>
+                    <li className={Styles.chatContainer}>
+                        <a className={Styles.navLink}>
+                            <i className={`fa fa-comment-o ${Styles.chatIcon}`}></i>
+                        </a>
+                    </li>
+                    <li className={Styles.profileContainer}>
+                        <a className={Styles.navLink}>
+                        <img src="https://smarthr-react.dreamguystech.com/orange/beddc55afb58f96516b9a7df5056319e.jpg" className={Styles.profilePhoto} alt=""></img>
+                            {/* <Select className={Styles.profileDropdown} defaultValue="">
+                                <MenuItem value={10}>My Profile</MenuItem>
+                                <MenuItem value={20}>Settings</MenuItem>
+                                <MenuItem value={30}>Logout</MenuItem>
+                            </Select> */}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
