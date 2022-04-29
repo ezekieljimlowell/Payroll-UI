@@ -200,22 +200,22 @@ input, input:focus, button, button:focus {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.languageContainer select {
+.languageContainer .selectLanguage {
     border: none;
-    background-color: #fc6075;
+    /* background-color: #fc6075; */
     height: 58px;
     color: white;
     padding: 2px;
     cursor: pointer;
 }
 
-.languageContainer select:hover {
+.languageContainer .selectLanguage:hover {
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
     outline: none;
 }
 
-.languageContainer select:focus {
+.languageContainer .selectLanguage:focus {
     border: none;
     outline: none;
 }
@@ -236,7 +236,44 @@ input, input:focus, button, button:focus {
 }
 
 .notificationContainer:hover {
-    background-color:  rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.notificationNumberBell {
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: #7460ee;
+}
+
+.notificationNumberChat {
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 6px;
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    background-color: #7460ee;
 }
 
 .chatContainer {
@@ -244,10 +281,10 @@ input, input:focus, button, button:focus {
 }
 
 .chatContainer:hover {
-    background-color:  rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.profileContainer .profilePhoto{
+.profileContainer .profilePhoto {
     width: 40px;
     height: 40px;
     border-radius: 40px;
@@ -256,7 +293,13 @@ input, input:focus, button, button:focus {
 }
 
 .profileContainer:hover {
-    background-color:  rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flagImage {
+    padding-right: 6px;
+    filter: brightness(130%);
+    vertical-align: middle;
 }
 
 /* .languageContainer select:active {
@@ -264,7 +307,7 @@ input, input:focus, button, button:focus {
     border: none;
 } */
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 1000px) {
     .menuLogo {
         color: #999;
         float: left;
@@ -273,3 +316,5 @@ input, input:focus, button, button:focus {
         padding: 0 10px;
     }
 }
+
+@media screen and (max-width: 1000px) {}

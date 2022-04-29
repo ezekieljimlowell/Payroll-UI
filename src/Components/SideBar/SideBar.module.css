@@ -1,0 +1,120 @@
+.sideBarContainer ul li {
+    list-style-type: none;
+}
+
+.sideBarContainer ul {
+    padding-left: 0;
+}
+
+.sideBarContainer a {
+    text-decoration: none;
+    color: #b7c0cd;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.sideBarContainer a:hover {
+    color: #fff;
+}
+
+.sideBarContainer {
+    background-color: #34444c;
+    border-right: 1px solid transparent;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 60px;
+    transition: all 0.2s ease-in-out 0s;
+    width: 230px;
+    z-index: 1001;
+}
+
+.sideBar>ul>li {
+    position: relative;
+}
+
+.menuTitle {
+    color: #ebecf1;
+    display: flex;
+    font-size: 14px;
+    opacity: 1;
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+.sideNavigation .arrow {
+    -webkit-transition: -webkit-transform 0.15s;
+    -o-transition: -o-transform 0.15s;
+    transition: transform .15s;
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    text-rendering: auto;
+    line-height: 40px;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    line-height: 18px;
+    top: 11px;
+}
+
+.sideNavigation .arrow::before {
+    content: "\f105";
+}
+
+.sideBarContainer>ul>li>a>span {
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-block;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+.sideBarContainer li a {
+    color: #b7c0cd;
+    display: block;
+    font-size: 15px;
+    height: auto;
+    padding: 0 20px;
+}
+
+.sideBarContainer>ul>li>a {
+    padding: 8px 15px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.subMenu {
+    padding: 10px;
+}
+
+.subMenu i {
+    color: #b7c0cd;
+}
+
+.sideBar .settingsIcon {
+    height: 17px;
+    width: 17px;
+    position: relative;
+    top: 2px;
+}
+
+.sideBar .sideBarText {
+    margin-left: 15px;
+}
+
+.menuLink {
+    vertical-align: middle;
+}
+
+.dashBoard::selection .arrow {
+    transform: rotate(90deg);
+}
