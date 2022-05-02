@@ -115,6 +115,30 @@
     vertical-align: middle;
 }
 
-.dashBoard::selection .arrow {
+.sideBar .rotate {
     transform: rotate(90deg);
+}
+
+/* DashBoard icon and text */
+.iconDisplay {
+    position: relative;
+    top: 2px;
+}
+
+.dashBoardText {
+    margin-left: 15px;
+}
+
+.childMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.childMenu a {
+    padding: 9px 10px 9px 50px;
+}
+
+.childMenu a:focus {
+    color: #ff9b44;
+    text-decoration: underline;
 }
