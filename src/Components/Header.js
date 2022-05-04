@@ -12,15 +12,6 @@ import Spain_flag from '../Images/Spain_flag.png';
 import { SideBar } from "./SideBar/SideBar";
 import { Route, Routes } from 'react-router-dom';
 
-import AdminDashboard from "./AdminDashboard/AdminDashboard";
-import EmployeeDashboard from "./EmployeeDashboard/EmployeeDashboard";
-import { Chat } from './Applications/Chat';
-import Calendar from "./Applications/Calendar";
-import { Calls } from "./Applications/Calls";
-import { Email } from "./Applications/Email";
-import { FileManager } from "./Applications/FileManager";
-import { Contacts } from "./Applications/Contacts";
-
 export const Header = () => {
     const [language, setLanguage] = useState(10);
     const [showSideBar, setShowSideBar] = useState(true);
@@ -117,18 +108,6 @@ export const Header = () => {
                 </ul>
             </div>
             {showSideBar && <SideBar />}
-            <Routes>
-                {/*Dashboard */}
-                <Route path="/" element={<AdminDashboard />} />
-                <Route path="employeedashboard" element={<EmployeeDashboard />} />
-
-                <Route path="chat" element={<Chat />} />
-                <Route path="calls" element={<Calls />} />
-                <Route path="calender" element={<Calendar />} />
-                <Route path="email" element={<Email />} />
-                <Route path="filemanager" element={<FileManager />} />
-                <Route path="contacts" element={<Contacts />} />
-            </Routes>
         </div>
     )
 }

@@ -17,6 +17,11 @@
     color: #fff;
 }
 
+.sideBarContainer a:hover i {
+    color: #fff;
+}
+
+
 .sideBarContainer {
     background-color: #34444c;
     border-right: 1px solid transparent;
@@ -121,8 +126,13 @@
 
 /* DashBoard icon and text */
 .iconDisplay {
-    position: relative;
-    top: 2px;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20px;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .dashBoardText {
@@ -141,4 +151,19 @@
 .childMenu a:focus {
     color: #ff9b44;
     text-decoration: underline;
+}
+
+.sideBar ul li a i {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.la .las {
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
 }

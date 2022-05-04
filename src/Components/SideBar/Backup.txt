@@ -13,4 +13,39 @@
     // }
 
 
-    
+    import AdminDashboard from "./AdminDashboard/AdminDashboard";
+import EmployeeDashboard from "./EmployeeDashboard/EmployeeDashboard";
+import { Chat } from './Applications/Chat';
+import Calendar from "./Applications/Calendar";
+import { Calls } from "./Applications/Calls";
+import { Email } from "./Applications/Email";
+import { FileManager } from "./Applications/FileManager";
+import { Contacts } from "./Applications/Contacts";
+import { AllEmployees } from "./Employees/AllEmployees";
+import { Holidays } from "./Employees/Holidays";
+import { LeavesAdmin } from "./Employees/LeavesAdmin";
+import { LeavesEmployee } from "./Employees/LeavesEmployee";
+import { LeaveSettings } from "./Employees/LeaveSettings";
+import { AttendanceAdmin } from "./Employees/AttendanceAdmin";
+import { AttendanceEmployee } from "./Employees/AttendanceEmployee";
+import { Departments } from "./Employees/Departments";
+import { Designations } from "./Employees/Designations";
+import { Timesheet } from "./Employees/Timesheet";
+import { ShiftAndSchedule } from "./Employees/ShiftAndSchedule";
+import { Overtime } from "./Employees/Overtime";
+import { Tasks } from "./Projects/Tasks";
+import { Projects } from "./Projects/Projects";
+import { TaskBoard } from "./Projects/TaskBoard";
+import { Estimates } from "./Sales/Estimates";
+import { Invoices } from "./Sales/Invoices";
+import { Payments } from "./Sales/Payments";
+import { ProvidentFund } from "./Sales/ProvidentFund";
+import { Taxes } from "./Sales/Taxes";
+import { Expenses } from "./Sales/Expenses";
+import { BudgetRevenues } from "./Accounting/BudgetRevenues";
+import { BudgetExpenses } from "./Accounting/BudgetExpenses";
+import { Budgets } from "./Accounting/Budgets";
+import { Categories } from "./Accounting/Categories";
+import { EmployeeSalary } from "./Payroll/EmployeeSalary";
+import { PayrollItems } from "./Payroll/PayrollItems";
+import { Payslip } from "./Payroll/Payslip";
