@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './Components/Header';
 import { Route, Routes } from 'react-router-dom';
@@ -69,6 +68,49 @@ import { ExperienceLevel } from './Components/Jobs/ExperienceLevel';
 import { CandidatesList } from './Components/Jobs/CandidatesList';
 import { ScheduleTiming } from './Components/Jobs/ScheduleTiming';
 import { AptitudeResults } from './Components/Jobs/AptitudeResults';
+import { EmployeeProfile } from './Components/Pages/Profile/EmployeeProfile';
+import { ClientProfile } from './Components/Pages/Profile/ClientProfile';
+import { Login } from './Components/Pages/Authentication/Login';
+import { Register } from './Components/Pages/Authentication/Register';
+import { ForgotPassword } from './Components/Pages/Authentication/ForgotPassword';
+import { OTP } from './Components/Pages/Authentication/OTP';
+import { LockScreen } from './Components/Pages/Authentication/LockScreen';
+import { Error404 } from './Components/Pages/ErrorPages/Error404';
+import { Error500 } from './Components/Pages/ErrorPages/Error500';
+import { SubscriptionsAdmin } from './Components/Pages/Subscriptions/SubscriptionsAdmin';
+import { SubscribedCompanies } from './Components/Pages/Subscriptions/SubscribedCompanies';
+import { SubscriptionsCompany } from './Components/Pages/Subscriptions/SubscriptionsCompany';
+import { Search } from './Components/Pages/Pages/Search';
+import { FAQ } from './Components/Pages/Pages/FAQ';
+import { Terms } from './Components/Pages/Pages/Terms';
+import { PrivacyPolicy } from './Components/Pages/Pages/PrivacyPolicy';
+import { BlankPage } from './Components/Pages/Pages/BlankPage';
+import { BasicInputs } from './Components/FormsTables/Forms/BasicInputs';
+import { InputGroups } from './Components/FormsTables/Forms/InputGroups';
+import { HorizantalForm } from './Components/FormsTables/Forms/HorizontalForm';
+import { VerticalForm } from './Components/FormsTables/Forms/VerticalForm';
+import { FormMask } from './Components/FormsTables/Forms/FormMask';
+import { FormValidation } from './Components/FormsTables/Forms/FormValidation';
+import { BasicTables } from './Components/FormsTables/Tables/BasicTables';
+import { DataTable } from './Components/FormsTables/Tables/DataTable';
+import { Clients } from './Components/IndividualRouters/Clients';
+import { Leads } from './Components/IndividualRouters/Leads';
+import { Policies } from './Components/IndividualRouters/Policies';
+import { Tickets } from './Components/IndividualRouters/Tickets';
+import { Promotion } from './Components/IndividualRouters/Promotion';
+import { Resignation } from './Components/IndividualRouters/Resignation';
+import { Termination } from './Components/IndividualRouters/Termination';
+import { Assets } from './Components/IndividualRouters/Assets';
+import { Knowledgebase } from './Components/IndividualRouters/Knowledgebase';
+import { Activities } from './Components/IndividualRouters/Activities';
+import { Users } from './Components/IndividualRouters/Users';
+import { Settings } from './Components/IndividualRouters/Settings';
+import { Components } from './Components/IndividualRouters/Components';
+import { Documentation } from './Components/IndividualRouters/Documentation';
+import { ChangeLog } from './Components/IndividualRouters/ChangeLog';
+import { Level1 } from './Components/MultiLevel/Level1';
+import { Level2 } from './Components/MultiLevel/Level2';
+import { Level3 } from './Components/MultiLevel/Level3';
 
 function App() {
   return (
@@ -151,17 +193,78 @@ function App() {
         <Route path="trainingType" element={<TrainingType />} />
 
         {/*Jobs*/}
-        <Route path="userDashboard" element={<UserDashboard />}/>
-        <Route path="jobsDashboard" element={<JobsDashboard />}/>
-        <Route path="manageJobs" element={<ManageJobs />}/>
-        <Route path="manageResumes" element={<ManageResumes />}/>
-        <Route path="shortlistCandidates" element={<ShortlistCandidates />}/>
-        <Route path="interviewQuestions" element={<InterviewQuestions />}/>
-        <Route path="offerApprovals" element={<OfferApprovals />}/>
-        <Route path="experienceLevel" element={<ExperienceLevel />}/>
-        <Route path="candidatesList" element={<CandidatesList />}/>
-        <Route path="scheduleTiming" element={<ScheduleTiming />}/>
-        <Route path="aptitudeResults" element={<AptitudeResults />}/>
+        <Route path="userDashboard" element={<UserDashboard />} />
+        <Route path="jobsDashboard" element={<JobsDashboard />} />
+        <Route path="manageJobs" element={<ManageJobs />} />
+        <Route path="manageResumes" element={<ManageResumes />} />
+        <Route path="shortlistCandidates" element={<ShortlistCandidates />} />
+        <Route path="interviewQuestions" element={<InterviewQuestions />} />
+        <Route path="offerApprovals" element={<OfferApprovals />} />
+        <Route path="experienceLevel" element={<ExperienceLevel />} />
+        <Route path="candidatesList" element={<CandidatesList />} />
+        <Route path="scheduleTiming" element={<ScheduleTiming />} />
+        <Route path="aptitudeResults" element={<AptitudeResults />} />
+
+        {/*Profile*/}
+        <Route path="employeeProfile" element={<EmployeeProfile />} />
+        <Route path="clientProfile" element={<ClientProfile />} />
+
+        {/*Authentication*/}
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="forgotPassword" element={<ForgotPassword />} />
+        <Route path="otp" element={<OTP />} />
+        <Route path="lockScreen" element={<LockScreen />} />
+
+        {/*Error Pages*/}
+        <Route path="error404" element={<Error404 />} />
+        <Route path="error500" element={<Error500 />} />
+
+        {/*Subscriptions*/}
+        <Route path="subscriptionsAdmin" element={<SubscriptionsAdmin />} />
+        <Route path="subscriptionsCompany" element={<SubscriptionsCompany />} />
+        <Route path="subscribedCompanies" element={<SubscribedCompanies />} />
+
+        {/*Pages*/}
+        <Route path="search" element={<Search />} />
+        <Route path="faq" element={<FAQ />} />
+        <Route path="terms" element={<Terms />} />
+        <Route path="privacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="blankPage" element={<BlankPage />} />
+
+        {/*Forms*/}
+        <Route path="basicInputs" element={<BasicInputs />} />
+        <Route path="inputGroups" element={<InputGroups />} />
+        <Route path="horizontalForm" element={<HorizantalForm />} />
+        <Route path="verticalForm" element={<VerticalForm />} />
+        <Route path="formMask" element={<FormMask />} />
+        <Route path="formValidation" element={<FormValidation />} />
+
+        {/*Tables*/}
+        <Route path="basicTables" element={<BasicTables />}/>
+        <Route path="dataTable" element={<DataTable />}/>
+
+        {/*Individual outer routers*/}
+        <Route path="clients" element={<Clients />}/>
+        <Route path="leads" element={<Leads />}/>
+        <Route path="policies" element={<Policies />}/>
+        <Route path="tickets" element={<Tickets />}/>
+        <Route path="promotion" element={<Promotion />}/>
+        <Route path="resignation" element={<Resignation />}/>
+        <Route path="termination" element={<Termination />}/>
+        <Route path="assets" element={<Assets />}/>
+        <Route path="knowledgebase" element={<Knowledgebase />}/>
+        <Route path="activities" element={<Activities />}/>
+        <Route path="users" element={<Users />}/>
+        <Route path="settings" element={<Settings />}/>
+        <Route path="components" element={<Components />}/>
+        <Route path="documentation" element={<Documentation />}/>
+        <Route path="changeLog" element={<ChangeLog />}/>
+
+        {/*Multi level routers*/}
+        <Route path="level1" element={<Level1 />}/>
+        <Route path="level2" element={<Level2 />}/>
+        <Route path="level3" element={<Level3 />}/>
       </Routes>
     </div>
   );

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Styles from './Header.module.css';
 import SearchIcon from "@mui/material/Icon";
-import { US } from 'country-flag-icons/string/3x2';
-import Flags from 'country-flag-icons/react/3x2';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import { MenuItem, Select } from "@mui/material";
 import US_flag from '../Images/US_flag.png';
@@ -10,7 +8,6 @@ import French_flag from '../Images/France.png';
 import German_flag from '../Images/German_flag.png';
 import Spain_flag from '../Images/Spain_flag.png';
 import { SideBar } from "./SideBar/SideBar";
-import { Route, Routes } from 'react-router-dom';
 
 export const Header = () => {
     const [language, setLanguage] = useState(10);

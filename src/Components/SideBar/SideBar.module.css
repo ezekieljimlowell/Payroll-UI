@@ -85,7 +85,7 @@
     display: block;
     font-size: 15px;
     height: auto;
-    padding: 0 20px;
+    padding-left: 9px;
 }
 
 .sideBarContainer>ul>li>a {
@@ -166,4 +166,59 @@
 .la .las {
     font-family: 'Line Awesome Free';
     font-weight: 900;
+}
+
+
+.multiArrow {
+    -webkit-transition: -webkit-transform 0.15s;
+    -o-transition: -o-transform 0.15s;
+    transition: transform .15s;
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    text-rendering: auto;
+    line-height: 40px;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    line-height: 18px;
+}
+
+.multiArrow::before {
+    content: "\f105";
+}
+
+.multiRotate {
+    transform: rotate(90deg);
+}
+
+ .sideBarContainer button {
+    background-color: #34444c;
+    box-shadow: none;
+    border: none;
+    color: #b7c0cd;
+    cursor: pointer;
+}
+
+.sideBarContainer button:hover {
+    color: #fff;
+}
+
+.sideBarContainer button:hover i {
+    color: #fff;
+}
+
+.sideBarContainer button i{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20px;
+    transition: all 0.2s ease-in-out 0s;
 }
