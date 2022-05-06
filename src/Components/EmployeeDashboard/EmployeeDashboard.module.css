@@ -1,0 +1,170 @@
+.empHeader {
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.empHeader img {
+    border-radius: 8px;
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.welcomeText {
+    font-size: 1.5rem;
+    font-family: CircularStd;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.welcomeContainer p {
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.container {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+    margin-right: 20px;
+}
+
+.Cards img {
+    background-color: #fff;
+    border: 3px solid #e7e7e7;
+    border-radius: 50%;
+    height: 45px;
+    position: relative;
+    width: 45px;
+}
+
+.Cards {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    color: #575757;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: auto;
+    padding: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+.firstCard {
+    color: #f62d51;
+}
+
+.imageContainer {
+    padding: 0 15px;
+}
+
+.firstCardContent {
+    font-size: 22px;
+    font-family: 'CircularStd', sans-serif;
+    ;
+}
+
+.icons {
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.icons i {
+    width: 30px;
+}
+
+.leftSideContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 22px;
+}
+
+/* Side containar*/
+.sideContent {
+    width: 33.33333334%;
+}
+
+.mainParent {
+    display: flex;
+    flex-direction: row;
+}
+
+.holidays {
+    text-align: center;
+}
+
+.taskStatus {
+    display: flex;
+    flex-direction: column;
+}
+
+.removeBoxShadow {
+    box-shadow: none;
+}
+
+.makePadding {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.secondRow {
+    text-align: center;
+}
+
+.secondRow button {
+    background-color: #ff9b44;
+    border: 1px solid #ff9b44;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.sideContent h4 {
+    color: #1f1f1f;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.taskContainer {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.sideContent h5 {
+    color: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
